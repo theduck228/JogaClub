@@ -1,0 +1,8 @@
+.advances {
+  display: flex;
+  flex-direction: column;
+}
+.advances h1 {
+  font-size: 50px;
+}
+/*# sourceMappingURL=advances.css.map */

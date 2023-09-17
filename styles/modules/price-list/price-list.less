@@ -1,0 +1,67 @@
+.price-list{
+  display: flex;
+  flex-direction: column;
+  h1{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .price-container{
+    display: inherit;
+    justify-content: center;
+    gap: 3%;
+    .pl-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 305px;
+      height: 500px;
+      background-color: @main_color;
+      border-radius: 325px 325px 0px 0px;
+      .pl-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60%;
+        h1{
+          font-size: 20px;
+        }
+        p{
+          width: 70%;
+          text-align: center;
+        }
+        ul{
+          list-style: none outside;
+          width: 60%;
+          padding: 0;
+          li{
+            display: flex;
+            align-items: center;
+            gap: 1%;
+          }
+          li:before{
+            content: url("../images/list-style.svg");
+            margin: 3%;
+          }
+        }
+      }
+      button{
+        height: 40px;
+        width: 165px;
+        border-radius: 50px;
+        background-color: @secondary_color;
+        border: none;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: @white;
+      }
+    }
+    .item-first-lesson,
+    .item-ten-lessons{
+      background-color: rgba(104, 186, 232, 0.50);
+    }
+  }
+}

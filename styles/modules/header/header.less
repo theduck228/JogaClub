@@ -1,0 +1,87 @@
+header{
+  display: flex;
+  flex-direction: column;
+  .header__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+      font-size: 60px;
+      color: @main_color;
+      margin-bottom: 0;
+    }
+    .header__socials{
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      display: flex;
+      width: 15%;
+      list-style-type: none;
+      margin-top: 10px;
+      .instagram a:before{
+        content: url("../images/instagram.svg");
+        width: 24px;
+        height: 24px;
+      }
+      .twitter a:before{
+        content: url("../images/twitter.svg");
+        width: 24px;
+        height: 24px;
+      }
+      .facebook a:before{
+        content: url("../images/facebook.svg");
+        width: 24px;
+        height: 24px;
+      }
+      .youtube a:before{
+        content: url("../images/youtube.svg");
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .header-body{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    .header-registration{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      justify-content: center;
+      h1{
+        font-size: 50px;
+        margin-bottom: 0;
+      }
+      p{
+        margin-top: 0;
+        font-size: 30px;
+      }
+      .button-container{
+        display: flex;
+        width: 100%;
+        .registration-btn{
+          width: 40% !important;
+          padding: 0;
+          margin-right: 30px;
+          font-size: 20px;
+          font-weight: 700;
+          .btn_mix-in();
+        }
+        .learn-more-btn{
+          .btn_mix-in();
+          background-color: @white;
+          color: #000000;
+          border: 1px solid #000000;
+          width: 40%;
+          font-size: 20px;
+        }
+      }
+    }
+    img{
+      width: 30%;
+      height: 30%;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.advances{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 120px;
+  h1{
+    font-size: 50px;
+  }
+  .advances-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 70%;
+    justify-items: start;
+    align-items: start;
+    grid-gap: 60px;
+    .advance-item{
+      width: 80%;
+      h1{
+        font-size: 20px;
+      }
+    }
+    .item-time:before{
+      content: url("../images/clock.svg");
+      width: 40px;
+      height: 40px;
+    }
+    .item-discount:before{
+      content: url("../images/users.svg");
+      width: 40px;
+      height: 40px;
+    }
+    .item-response:before{
+      content: url("../images/thumbs-up.svg");
+      width: 40px;
+      height: 40px;
+    }
+    .item-review:before{
+      content: url("../images/fast-forward.svg");
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
